@@ -19,10 +19,10 @@ export const SOCIAL_LINKS = {
   facebook: "https://www.facebook.com/tajwone248tc",
 };
 export const STATS = [
-  { label: "Projects Completed", value: 25 },
-  { label: "Happy Clients", value: 15 },
-  { label: "Years of Experience", value: 5 },
-  { label: "Awards Won", value: 3 },
+  { label: "Projects Completed", value: "25+" },
+  { label: "Happy Clients", value: "15+" },
+  { label: "Years of Experience", value: "5+" },
+  { label: "Awards Won", value: "3+" },
 ];
 export const ABOUT_STATS = [
   { label: "Web Applications", value: 10 },
