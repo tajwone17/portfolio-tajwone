@@ -4,7 +4,7 @@ export const PERSONAL_INFO = {
   email: "tajwone248tc@gmail.com",
   location: "New York, USA",
   tagline: "Building seamless web experiences",
-  resume: "/resume.pdf",
+  resume: "/Resume.pdf",
   bio: [
     "Passionate developer with 5+ years of experience in building web applications.",
     "Skilled in JavaScript, React, Node.js, and Python.",
@@ -25,10 +25,9 @@ export const STATS = [
   { label: "Awards Won", value: "3+" },
 ];
 export const ABOUT_STATS = [
-  { label: "Web Applications", value: 10 },
-  { label: "Mobile Applications", value: 5 },
-  { label: "Data Analysis Projects", value: 7 },
-  { label: "Open Source Contributions", value: 12 },
+  { label: "Web Applications", value: "10+" },
+  { label: "Mobile Applications", value: "5+" },
+  { label: "Open Source Contributions", value: "12+" },
 ];
 export const NAV_LINKS = [
   { id: "about", label: "About" },
