@@ -15,7 +15,7 @@ import RadialGradientBackground from "../backgrounds/RadialGradientBackground";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
-      <RadialGradientBackground />
+      <RadialGradientBackground variant="hero" />
       {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -111,6 +111,12 @@ export default function Hero() {
           </FadeIn>
         </div>
       </div>
+      {/* Scroll Indicator */}
+      <button
+      onClick={()=>scrollToSection('about')}
+      className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <ChevronDown className=" w-8 h-8 text-primary " />
+      </button>
     </section>
   );
 }
