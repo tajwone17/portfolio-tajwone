@@ -20,7 +20,7 @@ export default function Navbar() {
   };
   return (
     <nav
-      className={`fixedtop-0 left-0 right-0 z-1000 w-full py-4 transiton-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-1000 w-full py-4 transition-all duration-300 ${
         isScrolled ? "bg-black/30 backdrop-blur-lg" : "bg-transparent"
       }`}
       style={{ transform: "translate3d(0,0,0)" }}

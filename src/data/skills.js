@@ -1,38 +1,73 @@
 export const skills = [
     {
         id: 1,
-        name: "JavaScript",
-        icon: "🟡",
+        name: "React.js",
+        icon: "Code2",
         level: "Expert",
-        experience: 5 // years
+        experience: "5+" // years
     },
     {
         id: 2,
-        name: "Python",
-        icon: "🐍",
+        name: "JavaScript",
+        icon: "FileCode",
         level: "Intermediate",
-        experience: 3 // years
+        experience: "3+" // years
     },
     {
         id: 3,
-        name: "Java",
-        icon: "☕",
+        name: "TypeScript",
+        icon: "FileCode",
         level: "Beginner",
-        experience: 1 // year
+        experience: "1+" // year
     },
     {
         id: 4,
-        name: "HTML",
-        icon: "🌐",
+        name: "Next.js",
+        icon: "Zap",
         level: "Expert",
-        experience: 4 // years
+        experience: "4+" // years
     },
     {
         id: 5,
-        name: "CSS",
-        icon: "🎨",
+        name: "Tailwind CSS",
+        icon: "Palette",
         level: "Intermediate",
-        experience: 3 // years
+        experience: "3+" // years
+    },
+    {
+        id: 6,
+        name: "Node.js",
+        icon: "Server",
+        level: "Intermediate",
+        experience: "2+" // years
+    },
+    {
+        id: 7,
+        name: "Git & GitHub",
+        icon: "GitBranch",
+        level: "Intermediate",
+        experience: "3+" // years
+    },
+    {
+        id: 8,
+        name: "Redux",
+        icon: "Stack",
+        level: "Intermediate",
+        experience: "2+" // years
+    },
+    {
+        id: 9,
+        name: "RESTful APIs",
+        icon: "Globe",
+        level: "Intermediate",
+        experience: "2+" // years
+    },
+    {
+        id: 10,
+        name: "MongoDB",
+        icon: "Database",
+        level: "Beginner",
+        experience: "1+" // year
     }
 ];
 
