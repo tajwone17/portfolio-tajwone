@@ -31,14 +31,12 @@ export default function Hero() {
             </FadeIn>
             <FadeIn delay={100}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight ">
-                React.Js Developer Portfolio
+                Hi, I'm <span className="text-white">TAJWONE</span>
               </h1>
             </FadeIn>
             <FadeIn delay={200}>
               <p className="text-lg text-white/70 max-w-137.5 mb-8">
-                Building modern,scalable web applications with
-                React,Javascript,and cutting-edge technologies. Transforming
-                ideas into exceptional digital experiences.
+                {PERSONAL_INFO.bio}
               </p>
             </FadeIn>
             <FadeIn delay={300}>

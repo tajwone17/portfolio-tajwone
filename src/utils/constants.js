@@ -1,13 +1,13 @@
 export const PERSONAL_INFO = {
-  name: "Tajwone Doe",
+  name: "Tajwone Chowdhury",
   title: "Full Stack Developer",
   email: "tajwone248tc@gmail.com",
-  location: "New York, USA",
+  location: "Sylhet, Bangladesh",
   tagline: "Building seamless web experiences",
   resume: "/Resume.pdf",
   bio: [
-    "Passionate developer with 5+ years of experience in building web applications.",
-    "Skilled in JavaScript, React, Node.js, and Python.",
+    "Passionate developer with 2+ years of experience in building web applications.",
+    "Skilled in MERN stack development.",
     "Committed to writing clean, efficient, and maintainable code.",
   ],
 };
