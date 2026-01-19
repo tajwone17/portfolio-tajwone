@@ -4,8 +4,9 @@ export const testimonials = [
     name: "Tajwone Doe",
     role: "Software Engineer",
     company: "Tech Solutions",
-    quote: "This product has changed the way we work!",
-    image: "john_doe.jpg",
+    quote:
+      "This product has completely transformed the way we approach our daily workflow. The efficiency gains have been remarkable, and our team couldn't imagine working without it now. Highly recommended for any organization.",
+    image: "/images/testimonials/Testimonial_1.jpg",
     rating: 5,
   },
   {
@@ -13,8 +14,9 @@ export const testimonials = [
     name: "Jane Smith",
     role: "Project Manager",
     company: "Innovate Inc.",
-    quote: "An invaluable tool for our team.",
-    image: "jane_smith.jpg",
+    quote:
+      "An invaluable tool for our team's project management needs. It has streamlined our processes, improved collaboration, and helped us deliver projects on time consistently. The support team is also exceptional.",
+    image: "/images/testimonials/Testimonial_2.jpg",
     rating: 4,
   },
   {
@@ -22,8 +24,9 @@ export const testimonials = [
     name: "Alice Johnson",
     role: "UX Designer",
     company: "Creative Co.",
-    quote: "I love the user-friendly interface!",
-    image: "alice_johnson.jpg",
+    quote:
+      "I absolutely love the user-friendly interface and intuitive design. It makes complex tasks feel simple, and the attention to detail is evident in every aspect. Our design team has increased productivity significantly since adoption.",
+    image: "/images/testimonials/Testimonial_3.jpg",
     rating: 5,
   },
   {
@@ -31,8 +34,9 @@ export const testimonials = [
     name: "Bob Brown",
     role: "Data Analyst",
     company: "Data Insights",
-    quote: "The insights we gain are incredible.",
-    image: "bob_brown.jpg",
+    quote:
+      "The insights we gain from this platform are truly incredible. The data visualization capabilities are top-notch, and it has enabled us to make more informed business decisions faster than ever before.",
+    image: "/images/testimonials/Testimonial_1.jpg",
     rating: 4,
   },
 ];
