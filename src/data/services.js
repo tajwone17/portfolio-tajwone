@@ -1,36 +1,44 @@
 export const services = [
   {
     id: 1,
-    icon: "🖥️",
-    title: "Web Development",
+    icon: "Code2",
+    title: "Frontend Development",
     description:
-      "Building responsive and functional websites using modern technologies.",
+      "Building responsive and interactive user interfaces using modern frameworks.",
   },
   {
     id: 2,
-    icon: "📱",
-    title: "Mobile Development",
-    description: "Creating mobile applications for iOS and Android platforms.",
+    icon: "Smartphone",
+    title: "Responsive Design",
+    description:
+      "Creating seamless experiences across all devices and screen sizes.",
   },
   {
     id: 3,
-    icon: "📊",
-    title: "Data Analysis",
+    icon: "Palette",
+    title: "UI/UX Design",
     description:
-      "Analyzing data to provide insights and support decision-making.",
+      "Designing intuitive and engaging user experiences with a focus on usability.",
   },
   {
     id: 4,
-    icon: "☁️",
-    title: "Cloud Services",
+    icon: "Box",
+    title: "Custom Components",
     description:
-      "Offering cloud solutions for storage, computing, and deployment.",
+      "Creating reusable and modular UI components tailored to your needs.",
   },
   {
     id: 5,
-    icon: "🔒",
-    title: "Cybersecurity",
+    icon: "Zap",
+    title: "Performance Optimization",
     description:
-      "Ensuring the security of systems and data against cyber threats.",
+      "Enhancing the speed and efficiency of applications for optimal user experience.",
+  },
+  {
+    id: 6,
+    icon: "CheckCircle2",
+    title: "Code Review & QA",
+    description:
+      "Ensuring code quality and reliability through thorough reviews and testing.",
   },
 ];
