@@ -13,10 +13,9 @@ export const PERSONAL_INFO = {
 };
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/tajwone248tc",
-  linkedin: "https://www.linkedin.com/in/tajwone248tc/",
-  twitter: "https://twitter.com/tajwone248tc",
-  facebook: "https://www.facebook.com/tajwone248tc",
+  github: "https://github.com/tajwone17",
+  linkedin: "https://www.linkedin.com/in/jakaria-chowdhury-tajwone-9a1b08293/",
+  facebook: "https://www.facebook.com/tajwone.chowdhury",
 };
 export const STATS = [
   { label: "Projects Completed", value: "25+" },
