@@ -21,6 +21,8 @@ export default function About() {
     { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
     { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
     { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+    { name: "Express.js", icon: SiNodedotjs, color: "#000000" },
+    { name: "MySQL", icon: SiNodedotjs, color: "#4479A1" },
   ];
   return (
     <section id="about" className="relative py-20 bg-black overflow-hidden">
@@ -182,7 +184,7 @@ export default function About() {
                 Technologies I Work with to build amazing products
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 w-full max-w-4xl">
+            <div className="grid grid-cols-2  md:grid-cols-4 gap-4 w-full max-w-4xl">
               {skills.map((skill, index) => (
                 <div key={index} className="group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-primary/50 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:scale-105">
                   <skill.icon className="text-3xl text-primary" />

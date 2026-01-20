@@ -7,6 +7,8 @@ import {
   SiTailwindcss,
   SiNodedotjs,
   SiMongodb,
+  SiExpress,
+  SiMysql,
 } from "react-icons/si";
 import { PERSONAL_INFO, STATS } from "../../utils/constants";
 import { scrollToSection } from "../../hooks/useScrollSpy";
@@ -100,6 +102,12 @@ export default function Hero() {
                       </div>
                       <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300 ">
                         <SiMongodb className="w-full h-full text-primary" />
+                      </div>
+                       <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300 ">
+                        <SiExpress className="w-full h-full text-primary" />
+                      </div>
+                       <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300 ">
+                        <SiMysql className="w-full h-full text-primary" />
                       </div>
                     </div>
                   </FadeIn>

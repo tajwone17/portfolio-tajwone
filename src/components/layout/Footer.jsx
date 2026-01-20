@@ -7,6 +7,7 @@ import {
   Mail,
   MapPin,
   Heart,
+  
 } from "lucide-react";
 import { PERSONAL_INFO, SOCIAL_LINKS, NAV_LINKS } from "../../utils/constants";
 import { scrollToSection } from "../../hooks/useScrollSpy";
@@ -18,6 +19,7 @@ export default function Footer() {
     linkedin: Linkedin,
     facebook: Facebook,
     instagram: Instagram,
+   
   };
   return (
     <footer className="relative bg-black overflow-hidden border-t border-white/10">

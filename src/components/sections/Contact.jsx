@@ -5,6 +5,7 @@ import {
   Github,
   Linkedin,
   Facebook,
+    Instagram,
   Send,
   MessageSquare,
 } from "lucide-react";
@@ -53,6 +54,7 @@ export default function Contact() {
     github: Github,
     linkedin: Linkedin,
     facebook: Facebook,
+    instagram: Instagram,
   };
 
   return (
@@ -212,7 +214,7 @@ export default function Contact() {
                 <p className="text-sm text-white/60 mb-4">Find me on</p>
                 <div className="flex gap-4 ">
                   {Object.entries(SOCIAL_LINKS)
-                    .slice(0, 3)
+                    .slice(0, 4)
                     .map(([platform, url]) => {
                       const Icon = socialIcons[platform];
                       return Icon ? (

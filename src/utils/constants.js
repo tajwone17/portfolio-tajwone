@@ -16,17 +16,19 @@ export const SOCIAL_LINKS = {
   github: "https://github.com/tajwone17",
   linkedin: "https://www.linkedin.com/in/jakaria-chowdhury-tajwone-9a1b08293/",
   facebook: "https://www.facebook.com/tajwone.chowdhury",
+  instagram: "https://www.instagram.com/tajwone17/",
 };
 export const STATS = [
-  { label: "Projects Completed", value: "25+" },
-  { label: "Happy Clients", value: "15+" },
-  { label: "Years of Experience", value: "5+" },
-  { label: "Awards Won", value: "3+" },
+  { label: "Project-Based Learning", value: "100%" },
+  { label: "Full-Stack Focus", value: "100%" },
+  { label: "Problem Solved", value: "600+" },
+  { label: "Years of Practice", value: "2+" },
 ];
+
 export const ABOUT_STATS = [
-  { label: "Web Applications", value: "10+" },
-  { label: "Mobile Applications", value: "5+" },
-  { label: "Open Source Contributions", value: "12+" },
+  { label: "Frontend & Full-Stack Projects", value: "10+" },
+  { label: "Technologies & Tools", value: "12+" },
+  { label: "GitHub Commits", value: "800+" },
 ];
 export const NAV_LINKS = [
   { id: "about", label: "About" },

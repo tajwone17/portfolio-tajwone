@@ -11,12 +11,15 @@ export default function Skills() {
       skills.find((s) => s.name === "TypeScript"),
       skills.find((s) => s.name === "Next.js"),
       skills.find((s) => s.name === "Tailwind CSS"),
+      skills.find((s) => s.name === "Bootstrap"),
       skills.find((s) => s.name === "Redux"),
     ].filter(Boolean),
     "Backend & APIs": [
       skills.find((s) => s.name === "Node.js"),
+      skills.find((s) => s.name === "Express.js"),
       skills.find((s) => s.name === "RESTful APIs"),
       skills.find((s) => s.name === "MongoDB"),
+      skills.find((s) => s.name === "SQL"),
     ].filter(Boolean),
     "Tools & Others": [
       skills.find((s) => s.name === "Git & GitHub"),
