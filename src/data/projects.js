@@ -78,4 +78,4 @@ export const projects = [
   //   githubUrl: "https://github.com/usertitle/project-six",
   // },
 ];
-export const categories = ["All", "Web Apps", "Android Apps", "Full Stack"];
+export const categories = ["All", "Web Apps",  "Full Stack"];

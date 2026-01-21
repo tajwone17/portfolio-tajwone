@@ -49,7 +49,7 @@ export default function Projects() {
   const categoryIcons = {
     "All": Target,
     "Web Apps": Globe,
-    "Android Apps": Palette,
+    // "Android Apps": Palette,
     "Full Stack": Zap,
   };
 
