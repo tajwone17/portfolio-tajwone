@@ -1,7 +1,7 @@
 export const testimonials = [
   {
     id: 1,
-    name: "Tajwone Doe",
+    name: "Chris Woakes",
     role: "Software Engineer",
     company: "Tech Solutions",
     quote:
