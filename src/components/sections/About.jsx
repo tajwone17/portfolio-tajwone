@@ -24,18 +24,6 @@ export default function About() {
     { name: "Express.js", icon: SiNodedotjs, color: "#000000" },
     { name: "MySQL", icon: SiNodedotjs, color: "#4479A1" },
   ];
-
-  // Handle resume download for both desktop and mobile
-  const handleResumeDownload = () => {
-    const link = document.createElement("a");
-    link.href = PERSONAL_INFO.resume;
-    link.download = "Tajwone_Chowdhury_Resume.pdf";
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
   return (
     <section id="about" className="relative py-20 bg-black overflow-hidden">
       <RadialGradientBackground variant="about" />
@@ -90,7 +78,7 @@ export default function About() {
 
             <FadeIn delay={400}>
               <button
-                onClick={handleResumeDownload}
+                onClick={() => window.open(PERSONAL_INFO.resume, )}
                 className="inline-flex items-center gap-3 bg-white hover:bg-white/90 text-black rounded-full px-8 py-4 text-base font-medium transition-all duration-300 w-fit group"
               >
                 <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300" />
