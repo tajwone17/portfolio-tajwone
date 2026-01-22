@@ -27,11 +27,11 @@ export default function About() {
 
   // Handle resume download for both desktop and mobile
   const handleResumeDownload = () => {
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     link.href = PERSONAL_INFO.resume;
-    link.download = 'Tajwone_Chowdhury_Resume.pdf';
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
+    link.download = "Tajwone_Chowdhury_Resume.pdf";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -191,16 +191,23 @@ export default function About() {
         <FadeIn delay={500}>
           <div className="flex flex-col items-center gap-8">
             <div className="text-center">
-              <h3 className="text-2xl font-normal text-white mb-2">Tech Stack & Expertise</h3>
+              <h3 className="text-2xl font-normal text-white mb-2">
+                Tech Stack & Expertise
+              </h3>
               <p className="text-sm text-white/60">
                 Technologies I Work with to build amazing products
               </p>
             </div>
             <div className="grid grid-cols-2  md:grid-cols-4 gap-4 w-full max-w-4xl">
               {skills.map((skill, index) => (
-                <div key={index} className="group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-primary/50 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:scale-105">
+                <div
+                  key={index}
+                  className="group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-primary/50 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:scale-105"
+                >
                   <skill.icon className="text-3xl text-primary" />
-                  <div className="text-sm text-white/80 font-medium text-center">{skill.name}</div>
+                  <div className="text-sm text-white/80 font-medium text-center">
+                    {skill.name}
+                  </div>
                   {/* hover Glow Effect */}
                   <div className="absolute inset-0 bg-linear-to-br from-primary/0 to-primary/0 group-hover:from-primary/10 group-hover:to-primary/10 rounded-2xl transition-all duration-300"></div>
                 </div>
