@@ -42,6 +42,7 @@ function App() {
             <Skills />
             <Projects />
             <Services />
+            <Certifications />
           </>
         )}
         {/* <Testimonials/> */}
