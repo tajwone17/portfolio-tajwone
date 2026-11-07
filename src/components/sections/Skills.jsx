@@ -5,6 +5,18 @@ import FadeIn from "../animations/FadeIn";
 export default function Skills() {
   //categorize skills
   const skillCategories = {
+    "AI & Research": [
+      skills.find((s) => s.name === "Python"),
+      skills.find((s) => s.name === "Machine Learning"),
+      skills.find((s) => s.name === "Deep Learning"),
+      skills.find((s) => s.name === "NLP"),
+      skills.find((s) => s.name === "Computer Vision"),
+      skills.find((s) => s.name === "Scikit-learn"),
+      skills.find((s) => s.name === "TensorFlow/Keras"),
+      skills.find((s) => s.name === "PyTorch"),
+      skills.find((s) => s.name === "Transformers"),
+      skills.find((s) => s.name === "CNNs"),
+    ].filter(Boolean),
     "Frontend Development": [
       skills.find((s) => s.name === "React.js"),
       skills.find((s) => s.name === "JavaScript"),
@@ -21,10 +33,11 @@ export default function Skills() {
       skills.find((s) => s.name === "MongoDB"),
       skills.find((s) => s.name === "SQL"),
     ].filter(Boolean),
-    "Tools & Others": [
+    "Backend, Tools & Others": [
+      skills.find((s) => s.name === "C/C++"),
       skills.find((s) => s.name === "Git & GitHub"),
-      skills.find((s) => s.name === "Docker"),
-      skills.find((s) => s.name === "Responsive Design"),
+      skills.find((s) => s.name === "Jupyter Notebook"),
+      skills.find((s) => s.name === "SQL"),
       skills.find((s) => s.name === "Figma"),
     ].filter(Boolean),
   };

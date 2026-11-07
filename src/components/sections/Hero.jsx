@@ -14,7 +14,9 @@ import { PERSONAL_INFO, STATS } from "../../utils/constants";
 import { scrollToSection } from "../../hooks/useScrollSpy";
 import FadeIn from "../animations/FadeIn";
 import RadialGradientBackground from "../backgrounds/RadialGradientBackground";
-export default function Hero() {
+export default function Hero({ profileMode, setProfileMode }) {
+  const isResearchProfile = profileMode === "research";
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
       <RadialGradientBackground variant="hero" />
@@ -27,7 +29,10 @@ export default function Hero() {
               <div className="inline-flex items-center gap-2.5 px-4.5 mb-8 bg-linear-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full">
                 <Star className="w-4 h-4 text-white fill-white" />
                 <span className="text-xs md:text-sm text-white tracking-[1.2px]">
-                  {PERSONAL_INFO.title} | Based in {PERSONAL_INFO.location}
+                  {isResearchProfile
+                    ? "Student Researcher at ELITE Research Lab"
+                    : "Full-Stack Developer"}{" "}
+                  | Based in {PERSONAL_INFO.location}
                 </span>
               </div>
             </FadeIn>
@@ -36,9 +41,33 @@ export default function Hero() {
                 Hi, I'm <span className="text-white">TAJWONE</span>
               </h1>
             </FadeIn>
+            <FadeIn delay={250}>
+              <div className="inline-flex items-center gap-1 p-1 mb-8 rounded-full border border-white/10 bg-white/5">
+                <button
+                  onClick={() => setProfileMode("research")}
+                  className={`px-4 py-2 rounded-full text-sm transition-all ${
+                    isResearchProfile
+                      ? "bg-primary text-black"
+                      : "text-white/60 hover:text-white"
+                  }`}
+                >
+                  Research Profile
+                </button>
+                <button
+                  onClick={() => setProfileMode("developer")}
+                  className={`px-4 py-2 rounded-full text-sm transition-all ${
+                    !isResearchProfile
+                      ? "bg-primary text-black"
+                      : "text-white/60 hover:text-white"
+                  }`}
+                >
+                  Developer Profile
+                </button>
+              </div>
+            </FadeIn>
             <FadeIn delay={200}>
               <p className="text-lg text-white/70 max-w-137.5 mb-8">
-                {PERSONAL_INFO.bio}
+                {PERSONAL_INFO.bio.join(" ")}
               </p>
             </FadeIn>
             <FadeIn delay={300}>
@@ -52,13 +81,13 @@ export default function Hero() {
               </button>
             </FadeIn>
             <FadeIn delay={400}>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mx-w-full">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mx-w-full">
                 {STATS.map((stat, index) => (
                   <div
                     key={index}
-                    className="text-left border-r border-white/50 pr-10 last:border-r-0"
+                    className="min-w-0 text-left border-r border-white/50 pr-8 md:pr-10 last:border-r-0"
                   >
-                    <div className="text-2xl font-normal text-primary mb-2 font-mono">
+                    <div className="text-lg md:text-xl font-normal text-primary mb-2 font-mono whitespace-nowrap">
                       {stat.value}
                     </div>
                     <p className="text-sm text-white leading-snug">

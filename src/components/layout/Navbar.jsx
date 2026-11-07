@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Code, Menu, X } from "lucide-react";
-import { NAV_LINKS, PERSONAL_INFO } from "../../utils/constants";
+import { PROFILE_MODES } from "../../utils/constants";
 import { useScrollSpy, scrollToSection } from "../../hooks/useScrollSpy";
-export default function Navbar() {
+export default function Navbar({ profileMode, setProfileMode, navLinks }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const activeSection = useScrollSpy(NAV_LINKS.map((link) => link.id));
+  const activeSection = useScrollSpy(navLinks.map((link) => link.id));
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +17,13 @@ export default function Navbar() {
   const handleNavClick = (sectionID) => {
     scrollToSection(sectionID);
     setIsMenuOpen(false);
+  };
+  const handleProfileChange = (mode) => {
+    if (mode !== profileMode) {
+      setProfileMode(mode);
+      setIsMenuOpen(false);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
   return (
     <nav
@@ -39,8 +46,8 @@ export default function Navbar() {
             </button>
           </div>
           {/* desktop navigation */}
-          <nav className="hidden md:flex items-center gap-7">
-            {NAV_LINKS.map((link) => (
+          <nav className="hidden lg:flex items-center gap-6">
+            {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
@@ -57,6 +64,21 @@ export default function Navbar() {
           {/* CTA Button */}
 
           <div className="hidden md:flex items-center gap-2">
+            <div className="flex items-center rounded-full border border-white/10 bg-white/5 p-1">
+              {Object.entries(PROFILE_MODES).map(([mode]) => (
+                <button
+                  key={mode}
+                  onClick={() => handleProfileChange(mode)}
+                  className={`px-3 py-2 rounded-full text-xs font-medium transition-all duration-300 ${
+                    profileMode === mode
+                      ? "bg-primary text-black"
+                      : "text-white/60 hover:text-white"
+                  }`}
+                >
+                  {mode === "research" ? "Research" : "Developer"}
+                </button>
+              ))}
+            </div>
             <button
               className="px-7 py-3.5 bg-white text-[#212121] font-medium text-base rounded-[17px] border border-white hover:bg-white/90 transition-all duration-300"
               onClick={() => handleNavClick("contact")}
@@ -85,7 +107,22 @@ export default function Navbar() {
       className={`md:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? "max-h-96 opacity-100" : 'max-h-0 opacity-0'}`}
       >
         <div className="bg-black/95 backdrop-blur-lg border-t border-white/10 px-5 py-6 space-y-3">
-            {NAV_LINKS.map((link) => (
+            <div className="flex gap-2 mb-4">
+              {Object.entries(PROFILE_MODES).map(([mode, profile]) => (
+                <button
+                  key={mode}
+                  onClick={() => handleProfileChange(mode)}
+                  className={`flex-1 px-3 py-3 rounded-lg text-sm font-medium transition-all ${
+                    profileMode === mode
+                      ? "bg-primary text-black"
+                      : "bg-white/5 text-white/60"
+                  }`}
+                >
+                  {profile.label}
+                </button>
+              ))}
+            </div>
+            {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}

@@ -9,11 +9,11 @@ import {
   Heart,
   
 } from "lucide-react";
-import { PERSONAL_INFO, SOCIAL_LINKS, NAV_LINKS } from "../../utils/constants";
+import { PERSONAL_INFO, SOCIAL_LINKS } from "../../utils/constants";
 import { scrollToSection } from "../../hooks/useScrollSpy";
 import FadeIn from "../animations/FadeIn";
 
-export default function Footer() {
+export default function Footer({ navLinks }) {
   const socialIcons = {
     github: Github,
     linkedin: Linkedin,
@@ -68,7 +68,7 @@ export default function Footer() {
                 Quick Links
               </h4>
               <ul className="space-y-3">
-                {NAV_LINKS.map((link) => (
+                {navLinks.map((link) => (
                   <li key={link.id}>
                     <button
                       onClick={() => scrollToSection(link.id)}

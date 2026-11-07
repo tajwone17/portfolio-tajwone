@@ -1,102 +1,25 @@
 export const skills = [
-    {
-        id: 1,
-        name: "React.js",
-        icon: "Code2",
-        level: "Expert",
-        experience: "3+" // years
-    },
-    {
-        id: 2,
-        name: "JavaScript",
-        icon: "FileCode",
-        level: "Expert",
-        experience: "3+" // years
-    },
-    {
-        id: 3,
-        name: "TypeScript",
-        icon: "FileCode",
-        level: "Beginner",
-        experience: "1+" // year
-    },
-    {
-        id: 4,
-        name: "Next.js",
-        icon: "Zap",
-        level: "Expert",
-        experience: "2+" // years
-    },
-    {
-        id: 5,
-        name: "Tailwind CSS",
-        icon: "Palette",
-        level: "Intermediate",
-        experience: "2+" // years
-    },
-     {
-        id: 6,
-        name: "Bootstrap",
-        icon: "LayoutList",
-        level: "Intermediate",
-        experience: "2+" // years
-    },
-    {
-        id: 7,
-        name: "Node.js",
-        icon: "Server",
-        level: "Intermediate",
-        experience: "2+" // years
-    },
-    {
-        id: 8,
-        name: "Git & GitHub",
-        icon: "GitBranch",
-        level: "Intermediate",
-        experience: "3+" // years
-    },
-    {
-        id: 9,
-        name: "Redux",
-        icon: "Stack",
-        level: "Intermediate",
-        experience: "1+" // years
-    },
-    {
-        id: 10,
-        name: "RESTful APIs",
-        icon: "Globe",
-        level: "Intermediate",
-        experience: "2+" // years
-    },
-    {
-        id: 11,
-        name: "MongoDB",
-        icon: "Database",
-        level: "Beginner",
-        experience: "1+" // year
-    },
-    {
-        id: 12,
-        name: "SQL",
-        icon: "Database",
-        level: "Intermediate",
-        experience: "2+" // year
-    },
-      {
-        id: 13,
-        name: "Figma",
-        icon: "Frame",
-        level: "Intermediate",
-        experience: "1+" // year
-    }
-    ,
-     {
-        id: 14,
-        name: "Express.js",
-        icon: "Server",
-        level: "Intermediate",
-        experience: "2+" // years
-    },
+  { id: 1, name: "Python", icon: "Code2", level: "Expert", experience: "Research" },
+  { id: 2, name: "Machine Learning", icon: "BrainCircuit", level: "Intermediate", experience: "Research" },
+  { id: 3, name: "Deep Learning", icon: "Network", level: "Intermediate", experience: "Research" },
+  { id: 4, name: "NLP", icon: "MessageSquareText", level: "Intermediate", experience: "Research" },
+  { id: 5, name: "Computer Vision", icon: "ScanEye", level: "Beginner", experience: "Research" },
+  { id: 6, name: "Scikit-learn", icon: "BarChart3", level: "Intermediate", experience: "Research" },
+  { id: 7, name: "TensorFlow/Keras", icon: "Network", level: "Intermediate", experience: "Research" },
+  { id: 8, name: "PyTorch", icon: "Network", level: "Beginner", experience: "Research" },
+  { id: 9, name: "Transformers", icon: "Workflow", level: "Intermediate", experience: "Research" },
+  { id: 10, name: "CNNs", icon: "ScanEye", level: "Intermediate", experience: "Research" },
+  { id: 11, name: "React.js", icon: "Code2", level: "Expert", experience: "Full-stack" },
+  { id: 12, name: "JavaScript", icon: "FileCode", level: "Expert", experience: "Full-stack" },
+  { id: 13, name: "Next.js", icon: "Zap", level: "Expert", experience: "Full-stack" },
+  { id: 14, name: "Tailwind CSS", icon: "Palette", level: "Intermediate", experience: "Full-stack" },
+  { id: 15, name: "Node.js", icon: "Server", level: "Intermediate", experience: "Full-stack" },
+  { id: 16, name: "Express.js", icon: "Server", level: "Intermediate", experience: "Full-stack" },
+  { id: 17, name: "MongoDB", icon: "Database", level: "Intermediate", experience: "Database" },
+  { id: 18, name: "MySQL", icon: "Database", level: "Intermediate", experience: "Database" },
+  { id: 19, name: "SQL", icon: "Database", level: "Intermediate", experience: "Database" },
+  { id: 20, name: "C/C++", icon: "Code2", level: "Intermediate", experience: "Algorithms" },
+  { id: 21, name: "Git & GitHub", icon: "GitBranch", level: "Intermediate", experience: "Tools" },
+  { id: 22, name: "Jupyter Notebook", icon: "BookOpen", level: "Intermediate", experience: "Tools" },
+  { id: 23, name: "Figma", icon: "Frame", level: "Intermediate", experience: "Design" },
 ];
-

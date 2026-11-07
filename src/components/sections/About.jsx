@@ -37,7 +37,7 @@ export default function About() {
                 <div className="inline-flex items-center gap-2.5 px-5 py-2.5 border border-primary/30 bg-primary/10 rounded-full w-fit">
                   <Code2 className="w-4 h-4 text-primary" />
                   <span className="text-sm text-primary font-medium">
-                    Full-Stack Developer
+                    AI Researcher & Full-Stack Developer
                   </span>
                   <Sparkles className="w-4 h-4 text-primary" />
                 </div>
@@ -50,7 +50,7 @@ export default function About() {
               <FadeIn delay={200}>
                 <div className="flex flex-col gap-4">
                   {PERSONAL_INFO.bio.map((paragraph, index) => {
-                    <p
+                    return <p
                       key={index}
                       className="text-base text-white/70 leading-relaxed"
                     >
@@ -102,8 +102,8 @@ export default function About() {
                         Expertise
                       </h3>
                       <p className="text-sm text-white/70 leading-relaxed">
-                        Leveraging cutting-edge technologies to build scalable
-                        and efficient web applications.
+                        Combining machine learning research with scalable,
+                        efficient full-stack applications.
                       </p>
                     </div>
                   </div>
